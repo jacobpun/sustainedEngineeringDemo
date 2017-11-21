@@ -1,0 +1,10 @@
+<div class="container">
+  <h1> {{ teamName }} </h1>
+  <p> Total Number of Tickets: {{ getTotalTicketCount() }} </p>
+  <app-add-team-member></app-add-team-member>
+  
+  <div *ngFor="let member of teamMembers">
+    <app-team-member 
+    [member] ="member"></app-team-member>
+  </div>
+</div>    

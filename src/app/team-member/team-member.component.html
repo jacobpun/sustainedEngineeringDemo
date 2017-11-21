@@ -1,0 +1,10 @@
+<div>
+  <br/>
+  <h3>{{member.lastName }}, {{member.firstName}}</h3>
+  Ticket Count: {{ member.ticketCount }} <br/>
+  <input type="button" value="Claim Ticket" class="btn btn-primary" (click) = "member.claimTicket()">
+  <input type="button" value="Close Ticket" class="btn btn-success" (click) = "member.closeTicket()">
+  <br/>
+  <br/>
+  <hr/>
+</div>
